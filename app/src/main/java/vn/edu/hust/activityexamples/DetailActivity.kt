@@ -34,11 +34,14 @@ class DetailActivity : AppCompatActivity() {
             // Set full name
             detailNameTextView.text = it.name
 
+            val phoneNumber = "Phone number: " + it.phoneNumber
             // Set phone number
-            detailPhoneTextView.text = it.phoneNumber
+            detailPhoneTextView.text = phoneNumber
+
+            val email = "Email: " + it.email
 
             // Set email
-            detailEmailTextView.text = it.email
+            detailEmailTextView.text = email
         } ?: run {
             // Handle the case where the contact is null (optional)
         }
